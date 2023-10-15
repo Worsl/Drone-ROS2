@@ -1,0 +1,14 @@
+sudo systemctl start firmwared.service
+
+sphinx "/opt/parrot-sphinx/usr/share/sphinx/drones/anafi_ai.drone"::firmware="https://firmware.parrot.com/Versions/anafi2/pc/%23latest/images/anafi2-pc.ext2.zip"
+
+sphinx "/opt/parrot-sphinx/usr/share/sphinx/drones/anafi.drone"::firmware="https://firmware.parrot.com/Versions/anafi/pc/%23latest/images/anafi-pc.ext2.zip"
+
+-------------------------------------------------------------------
+parrot-ue4-empty -config-file=/home/cheng/Desktop/config_file.yaml
+-------------------------------------------------------------------
+
+ros2 launch anafi_ros_nodes anafi_launch.py ip:='10.202.0.1' model:='ai'
+
+ros2 launch anafi_autonomy control_anafi_launch.py ip:='10.202.0.1' model:='ai'
+
