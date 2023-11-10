@@ -8,7 +8,16 @@ sphinx "/opt/parrot-sphinx/usr/share/sphinx/drones/anafi.drone"::firmware="https
 parrot-ue4-empty -config-file=/home/cheng/Desktop/config_file.yaml
 -------------------------------------------------------------------
 
-ros2 launch anafi_ros_nodes anafi_launch.py ip:='10.202.0.1' model:='ai'
-
 ros2 launch anafi_autonomy control_anafi_launch.py ip:='10.202.0.1' model:='ai'
 
+
+------------------------------------------------------------------
+cheng@cheng:~/ros2_ws$ ros2 run camera_calibration cameracalibrator --size 6x8 --square 0.02 --ros-args -r image:=/anafi/camera/image -p camera:=anafi
+
+('Wrote calibration data to', '/tmp/calibrationdata.tar.gz')
+
+
+
+# use the 4k version (guranteed)
+# numpy change
+# dimension should be 6 x 8 (count the edges )
