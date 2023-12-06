@@ -70,15 +70,20 @@ The calibration files include essential data obtained through the calibration pr
     - Calibration outcome in a YAML file (.yaml).
 
 ### How to Use Calibration Files:
+0. **Perform calibration**
+   ```
+   Calibration steps : https://navigation.ros.org/tutorials/docs/camera_calibration.html
+   ROS2 nodes used : https://github.com/andriyukr/anafi_autonomy
+   ```
 
-1. **Extract Calibration Files:**
+2. **Extract Calibration Files:**
    - Extract the contents of the `calibrationdata.tar.gz` archive to access the images and calibration outcome files.
 
    ```bash
    tar -zxvf calibrationdata.tar.gz
    ```
 
-2. **Review Calibration Data:**
+3. **Review Calibration Data:**
    - Explore the images and review the calibration results in both the .txt and .yaml files.
 
 ![Alt text](img/image-2.png)
