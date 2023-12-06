@@ -9,8 +9,8 @@ To integrate custom models into the ParrotSphinx environment, a model file in th
 1. **Create a Model (creating the mesh):**
    - Use a 3D modeling software (such as Blender in my case) to design and export your model from PDF to the .fbx format.
 
-![Alt text](image.png)
-![Alt text](image-3.png)
+![Alt text](img/image.png)
+![Alt text](img/image-3.png)
 2. **Load the Model into ParrotSphinx:**
    - Place the generated .fbx file in the designated directory within the ParrotSphinx environment. Note that sphinx only supports .fbx files
    - When launching ParrotSphinx, specify the custom model file to be loaded into the simulation environment.    specify the filepath which contains the config_file.yaml
@@ -52,7 +52,7 @@ Explanation:
 
    Adjust the `model_filename.fbx` with the actual name of your custom model file.
 
-   ![Alt text](image-1.png)
+   ![Alt text](img/image-1.png)
 
 3. **Experiment and Test:**
    - Run simulations with your custom model to ensure compatibility and proper integration into the ParrotSphinx environment.
@@ -81,4 +81,4 @@ The calibration files include essential data obtained through the calibration pr
 2. **Review Calibration Data:**
    - Explore the images and review the calibration results in both the .txt and .yaml files.
 
-![Alt text](image-2.png)
+![Alt text](img/image-2.png)
