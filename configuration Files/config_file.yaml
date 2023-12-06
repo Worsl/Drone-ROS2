@@ -2,7 +2,7 @@ Meshes:
   - Name: 'check-108'
     FbxPath: "/home/cheng/Desktop/check-108.fbx"
     Location: "0 10 100"
-    Rotation: "0 0 90"
+    Rotation: "0 90 90"
     Scale: "0.1 0.1 0.1"
     SnapToGround: false
 
